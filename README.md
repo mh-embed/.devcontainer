@@ -1,5 +1,7 @@
 # Devcontainer Docs
 
+This is the Debian 10 Buster version of the Drone Devcontainer Config. 
+
 # Add devcontainer
 
 To Add this devcontainer config to your dev environment, either clone this repo, or go to your git repository, then run
@@ -31,4 +33,28 @@ docker pull danielhouevr315/rone-devcontainer-buster:arm64
 - When done testing, click the bottom left green button and select "Repoen folder locally" to return to your host machine in terminal. 
 
 # Develop in ROS devcontainer
+1. Open your project in devcontainer, as described in the previous section. 
+2. You should be on the catkin workspace directory 
+3. Run
+```
+catkin_make
+```
+This compiles all your packages in the src/ directory, generates devel/ and build/ directories, and does a bunch of other stuff. 
+4. Run
+```
+source deve/setup.bash
+```
+so that ROS registers your packages.
+* Warning: * If you don't do this, the rosrun command will not be able to find your program. 
 
+5. Start ROS by running
+```
+roscore
+```
+
+6. Start your program: 
+- Make sure your packages are compiled and registered (step 3 and 4).
+- Run
+```
+rosrun <PackageName> <NodeName>
+```
