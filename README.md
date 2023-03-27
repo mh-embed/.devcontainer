@@ -27,7 +27,7 @@ docker pull danielhouevr315/rone-devcontainer-buster:amd64
 ```
 docker pull danielhouevr315/rone-devcontainer-buster:arm64
 ```
-*Warning: * arm64 image is designed for 64 bit ARM dev environments, it may not run on a Raspberry Pi with 32 bit OS. 
+*Warning:* arm64 image is designed for 64 bit ARM dev environments, it may not run on a Raspberry Pi with 32 bit OS. 
 
 3. Add devcontainer as described in the previous section. When you see the .devcontainer folder in your project, VSCode may prompt you to repoen the project in devcontainer. 
 - Make sure you installed the devcontainer extension to VSCode
@@ -42,12 +42,13 @@ docker pull danielhouevr315/rone-devcontainer-buster:arm64
 catkin_make
 ```
 This compiles all your packages in the src/ directory, generates devel/ and build/ directories, and does a bunch of other stuff. 
+
 4. Run
 ```
-source deve/setup.bash
+source devel/setup.bash
 ```
 so that ROS registers your packages.
-* Warning: * If you don't do this, the rosrun command will not be able to find your program. 
+* Warning:* If you don't do this, the rosrun command will not be able to find your program. 
 
 5. Start ROS by running
 ```
