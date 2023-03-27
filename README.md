@@ -10,7 +10,7 @@ git submodule add https://github.com/mh-embed/.devcontainer/ .devcontainer/
 ```
 This adds the drone-devcontainer-buster repo to your git repo as a submodule in the path .devcontainer, which is recognized by VSCode.
 
-Change the image version in the devcontainer.json file inside the directory to fit your platform. 
+** Change the image version in the devcontainer.json file inside the directory to fit your platform. **
 
 # Get devcontainer for your project
 1. Make sure you have docker
