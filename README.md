@@ -48,16 +48,18 @@ This compiles all your packages in the src/ directory, generates devel/ and buil
 source devel/setup.bash
 ```
 so that ROS registers your packages.
-* Warning:* If you don't do this, the rosrun command will not be able to find your program. 
+*Warning:* If you don't do this, the rosrun command will not be able to find your program. 
 
 5. Start ROS by running
 ```
 roscore
 ```
 
-6. Start your program: 
+6. In a new terminal window, start your program: 
 - Make sure your packages are compiled and registered (step 3 and 4).
 - Run
 ```
 rosrun <PackageName> <NodeName>
 ```
+
+7. To see information such as rostopic, open a new terminal window and do whatever you need to do. 
