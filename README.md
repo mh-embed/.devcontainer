@@ -6,7 +6,7 @@ This is the Debian 10 Buster version of the Drone Devcontainer Config.
 
 To Add this devcontainer config to your dev environment, either clone this repo, or go to your git repository, then run
 ```
-git submodule add https://github.com/mh-embed/.devcontainer/ .devcontainer/
+git submodule add https://github.com/mh-embed/ros-devcontainer-config/ .devcontainer/
 ```
 This adds the drone-devcontainer-buster repo to your git repo as a submodule in the path .devcontainer, which is recognized by VSCode.
 
