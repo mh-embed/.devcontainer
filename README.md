@@ -50,6 +50,7 @@ source devel/setup.bash
 so that ROS registers your packages.
 *Warning:* If you don't do this, the rosrun command will not be able to find your program. 
 
+## Manually Start ROS and your Node
 5. Start ROS by running
 ```
 roscore
@@ -61,5 +62,8 @@ roscore
 ```
 rosrun <PackageName> <NodeName>
 ```
+
+## Alternatively, use a launch file with [roslaunch](http://wiki.ros.org/roslaunch)
+- This section is TBD, use the previous one for now. 
 
 7. To see information such as rostopic, open a new terminal window and do whatever you need to do. 
